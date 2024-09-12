@@ -1,0 +1,136 @@
+/* Wishlist.css */
+
+/* Styling for category headers */
+.category {
+  margin: 20px;
+  font-size: 1.8rem;
+  font-family: 'Alegreya', serif;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Container for wishlist items */
+.wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Individual wishlist item card */
+.wishlist-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wishlist-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Wishlist item image */
+.wishlist-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Details of the wishlist item */
+.wishlist-details {
+  padding: 15px;
+}
+
+.wishlist-details h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wishlist-details p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+/* Button styles */
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #27ae60;
+  color: white;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Hover effects for buttons */
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Message when wishlist is empty */
+.empty-wishlist-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.empty-wishlist-message h2 {
+  color: #495057;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.empty-wishlist-message p {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/* Wishlist heading */
+.wishlist-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
